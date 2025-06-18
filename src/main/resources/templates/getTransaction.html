@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Get Transaction</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+   
+    <div class="card">
+        <h1 class="card-title">Get Transaction History</h1>
+
+      
+        <form th:action="@{/accounts/transactionHistory}" method="post">
+            <div>
+                <label for="accountNumber">Bank Account Number:</label>
+                <input type="text" id="accountNumber" name="accountNumber" required />
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

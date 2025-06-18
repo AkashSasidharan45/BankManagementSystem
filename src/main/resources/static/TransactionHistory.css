@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* General body styles for dark theme */
+body {
+  background-color: #121212; /* Dark background */
+  color: #E0E0E0; /* Light text color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Vertically center the card */
+}
+
+/* Card container styles */
+.card {
+  background-color: #1e1e1e; /* Dark background for the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
+  padding: 20px;
+  width: 100%; /* Full width */
+  max-width: 500px; /* Max width for the card */
+  margin: 20px;
+  overflow: hidden;
+}
+
+/* Card title styles */
+.card-title {
+  text-align: center; /* Center the heading */
+  color: #E0E0E0; /* Light text color */
+  font-size: 2em; /* Adjust font size */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Label styling */
+label {
+  font-size: 14px;
+  color: #E0E0E0;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Input styling */
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444; /* Dark border */
+  border-radius: 5px; /* Rounded input corners */
+  background-color: #333; /* Dark input background */
+  color: #E0E0E0; /* Light text color */
+  font-size: 14px;
+  outline: none; /* Remove default focus outline */
+}
+
+/* Focus state for inputs */
+input[type="text"]:focus, input[type="number"]:focus {
+  border-color: #4A90E2; /* Blue focus border */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Glow effect on focus */
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #2a2a2a; /* Dark table background */
+  border-radius: 8px;
+  overflow: hidden; /* Round the corners */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #333; /* Dark border */
+}
+
+th {
+  background-color: #333; /* Slightly lighter dark background for headers */
+  color: #FFFFFF; /* White text for headers */
+  font-weight: bold;
+}
+
+td {
+  color: #E0E0E0; /* Light text color */
+}
+
+tr:nth-child(even) {
+  background-color: #3a3a3a; /* Darker background for even rows */
+}
+
+tr:nth-child(odd) {
+  background-color: #2a2a2a; /* Standard background for odd rows */
+}
+
+tr:hover {
+  background-color: #444; /* Highlight row on hover */
+}
+
+/* Button styling */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #4A90E2; /* Blue button background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+  background-color: #357ABD; /* Darker blue on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+  th, td {
+    padding: 8px;
+  }
+}

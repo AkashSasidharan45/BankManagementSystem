@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* Basic reset for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    font-family: Arial, sans-serif;
+}
+
+/* Card container for the form */
+.card {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e; /* Dark background for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Soft shadow for depth */
+}
+
+/* Card title */
+.card-title {
+    text-align: center; /* Center the title */
+    color: #e0e0e0; /* Light text color */
+    font-size: 1.8em;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+}
+
+/* Label styling */
+label {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Text input field styling */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333; /* Dark input background */
+    color: #e0e0e0; /* Light text color */
+    font-size: 14px;
+    outline: none; /* Remove default focus outline */
+}
+
+/* Focus state for text inputs */
+input[type="number"]:focus {
+    border-color: #4A90E2; /* Focus border color */
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Soft glow effect */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333; /* Dark input background */
+    color: #e0e0e0; /* Light text color */
+    font-size: 14px;
+    outline: none; /* Remove default focus outline */
+}
+
+/* Focus state for text inputs */
+input[type="text"]:focus {
+    border-color: #4A90E2; /* Focus border color */
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Soft glow effect */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2; /* Blue background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #357ABD; /* Darker blue when hovering */
+}
+
+/* Required input field indicator */
+input[required] {
+    border: 2px solid #ff4d4d; /* Red border for required fields */
+}
+
+/* Optional visual feedback for form (if needed) */
+form p {
+    font-size: 12px;
+    color: #888; /* Subtle text color */
+    margin-top: 5px;
+}
